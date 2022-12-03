@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SmsCodeFragment">
+
+    <TextView
+        android:id="@+id/smsCodeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS kodni kiriting"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintLeft_toLeftOf="@id/input"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/numberText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bir martalik kod ***** yuborildi"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/input"
+        app:layout_constraintTop_toBottomOf="@id/smsCodeTv"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/phoneNumberTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS kod"
+        android:textColor="?colorOnPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/input"
+        app:layout_constraintTop_toBottomOf="@id/smsCodeTv"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="?colorOnPrimary"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/input"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintRight_toRightOf="@id/input"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        app:boxStrokeColor="?colorOnPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumberTv">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/getCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/refreshCode"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_baseline_autorenew_24"
+        android:text="Kodni qayta olish"
+        android:textAllCaps="false"
+        android:textColor="#20D472"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="@id/input"
+        app:layout_constraintTop_toBottomOf="@id/input" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

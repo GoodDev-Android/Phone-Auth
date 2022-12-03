@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_nav"
+    app:startDestination="@id/viewNumberFragment">
+
+    <fragment
+        android:id="@+id/authNumberFragment"
+        android:name="android.dev.phoneauthentication.ui.AuthNumberFragment"
+        android:label="fragment_auth_number"
+        tools:layout="@layout/fragment_auth_number" >
+        <action
+            android:id="@+id/action_authNumberFragment_to_smsCodeFragment"
+            app:destination="@id/smsCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/smsCodeFragment"
+        android:name="android.dev.phoneauthentication.ui.SmsCodeFragment"
+        android:label="fragment_sms_code"
+        tools:layout="@layout/fragment_sms_code" >
+        <action
+            android:id="@+id/action_smsCodeFragment_to_viewNumberFragment"
+            app:destination="@id/viewNumberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewNumberFragment"
+        android:name="android.dev.phoneauthentication.ui.ViewNumberFragment"
+        android:label="fragment_view_number"
+        tools:layout="@layout/fragment_view_number" >
+        <action
+            android:id="@+id/action_viewNumberFragment_to_authNumberFragment"
+            app:destination="@id/authNumberFragment"
+            app:popUpTo="@id/authNumberFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

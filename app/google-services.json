@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "279906920320",
+    "project_id": "authentication-app-911c4",
+    "storage_bucket": "authentication-app-911c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279906920320:android:5c5f1752fddee8b6b98365",
+        "android_client_info": {
+          "package_name": "android.dev.phoneauthentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279906920320-dov16fcg2epsu0k0df0amqk4ng9v47lg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3Bv7cyeAyt5TukZg-VjUlR-ucCDVqE94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279906920320-dov16fcg2epsu0k0df0amqk4ng9v47lg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279906920320:android:11e58f6bba976ca8b98365",
+        "android_client_info": {
+          "package_name": "uz.mobiler.authenticationapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279906920320-1odt89456boq7vv4hdhqnul030l236gd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "uz.mobiler.authenticationapp",
+            "certificate_hash": "cc780950ba9b2ddcb8ff74f7b07d52be29dd80b0"
+          }
+        },
+        {
+          "client_id": "279906920320-dov16fcg2epsu0k0df0amqk4ng9v47lg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3Bv7cyeAyt5TukZg-VjUlR-ucCDVqE94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "279906920320-dov16fcg2epsu0k0df0amqk4ng9v47lg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
